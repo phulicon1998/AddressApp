@@ -111,7 +111,7 @@ public class PersonOverviewController {
 			boolean okClicked = mainApp.showPersonEditDialog(selectedPerson);
 			if(okClicked) {
 				showPersonDetail(selectedPerson);
-			}
+			}	
 		} else {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.initOwner(mainApp.getPrimaryStage());

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
+<AnchorPane prefHeight="300.0" prefWidth="400.0" styleClass="background" stylesheets="@../css/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
    <children>
       <GridPane layoutX="13.0" layoutY="27.0" prefHeight="205.0" prefWidth="374.0">
         <columnConstraints>
@@ -67,10 +67,10 @@
             <TextField fx:id="birthdayField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <ButtonBar layoutX="186.0" layoutY="246.0" prefHeight="40.0" prefWidth="200.0">
+      <ButtonBar layoutX="167.0" layoutY="246.0" prefHeight="40.0" prefWidth="219.0">
         <buttons>
-          <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
-            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+          <Button defaultButton="true" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="97.0" text="Cancel" />
         </buttons>
       </ButtonBar>
    </children>
